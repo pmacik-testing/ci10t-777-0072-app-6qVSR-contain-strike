@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vuoe
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0072-tenant/ci10t-777-0072-app/devfile-sample-vuoe@sha256:e9e3c676e140a4d34b9e467a890e069224d87f0ff21e7a950cb990cf931f03d2
+        name: my-nodejs
+        resources: {}
+status: {}
